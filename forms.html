@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <body background="https://wallpapers.com/images/hd/terraria-biome-background-h1bm9hfi6el9yrfu.jpg"
+    style="background-repeat: no-repeat; background-size: cover;">
+        <form action="" onsubmit="" method="">
+            <fieldset style="font-weight:bold; color:white;">
+                <legend>My Form</legend>
+                <div>
+                    <label>Name:
+                        <input type="text" id="name" name="name" 
+                        placeholder="Enter your full name" required/>
+                    </label>
+                </div>
+                <div>
+                    <label>Class:
+                        <input type="text" id="class" name="class" 
+                        placeholder="Enter class" required/>
+                    </label>
+                </div>
+                <div>
+                    <label>Age:
+                        <input type="text" id="age" name="age" 
+                        placeholder="Enter your age" required/>
+                    </label>
+                </div>
+                <div>
+                    <label>Phone:
+                        <input type="tel" id="phone" name="phone" 
+                        placeholder="Enter your phone number" required/>
+                    </label>
+                </div>
+                <div>
+                    <label>What food do you like the most?
+                        <select name="foodPref" required>
+                            <option value="1">laksa</option>
+                            <option value="2" selected>nasi lemak</option>
+                            <option value="3">hokkien mee</option>
+                            <option value="4">lor mee</option>
+                            <option value="5">fried rice</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Date of Birth:
+                        <input type="date" name="DoB">
+                    </label>
+                </div>
+                <div>
+                    <script>
+                        function outputUpdate(value) {
+                            document.getElementById("output").innerHTML = value;
+                        }
+                    </script>
+                    <label>
+                        Rate: <pre> How much do you like coding?</pre>
+                        <input type="range" min="1" max="10" step="1" name="likeValue"
+                        id="rating" value="5" oninput="outputUpdate(value)"/>
+                        <output for="rating" id="output">5</output>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Comments: <br>
+                        <textarea name="comments" placeholder="Enter Comments"></textarea>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Email
+                        <input type="email" name="email" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        ARE YOU HUMAN? 
+                        <input type="checkbox" name="human" id="human" checked>
+                    </label>
+                </div>
+                <button type="submit" id="submit-form">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
